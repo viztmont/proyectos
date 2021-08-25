@@ -1,0 +1,84 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+:root{
+    --header-height: 3rem;
+    --font-semi: 600;
+    background-color: #0f3f7f;
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: white;
+    /*color: var(--second-color);*/
+    background-color: #0F3F7F;
+  }
+
+h1{
+    text-align: center;
+    color: #fff;
+}
+p{
+  text-align: center;
+    color: #fff;
+}
+
+.contenedorpadre{
+    background-color: #0f3f7f;
+    display: flex;
+    flex-wrap: wrap;  
+    align-content: space-between;
+    justify-content: center;
+}
+
+.cotenedorhijo1 img{
+    width:400px;
+    height:200px;
+}
+
+
+@media screen and (max-width: 500px){
+    .contenedorpadre{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .cotenedorhijo1 img{
+        width:400px;
+        height:300px;
+    }
+  }
+  /* ===== FOOTER =====*/
+.footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2em 0;
+  }
+  .footer__title{
+    font-size: 2rem;
+    margin-bottom: var(--mb-4);
+  }
+  .footer__social{
+    margin-bottom: var(--mb-4);
+  }
+  .footer__icon{
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 var(--mb-2)
+  }
